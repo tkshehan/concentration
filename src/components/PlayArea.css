@@ -1,0 +1,10 @@
+.playarea{
+  width: 600px;
+}
+
+.cards{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 600px;
+}

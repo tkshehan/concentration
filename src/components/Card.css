@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid black;
+  height: 144px;
+
+  margin: 4px;
+  flex-basis: 103px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 144px;
+}
+
+.selected {
+  border: 2px solid blue;
+  margin: 3px;
+}
+
+.cardback {
+  transform: rotate(60deg);
+  font-style: oblique;
+}
+
+.removed {
+  border: none;
+  margin: 5px;
+}

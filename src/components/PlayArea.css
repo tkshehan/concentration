@@ -1,10 +1,27 @@
-.playarea{
-  width: 600px;
+.playarea {
+  width: 450px;
 }
 
-.cards{
-  display:flex;
+.cards {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 600px;
+}
+
+button.newGame {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.gameOver {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+@media (min-width: 600px) {
+  .playarea {
+    width: 600px;
+  }
 }

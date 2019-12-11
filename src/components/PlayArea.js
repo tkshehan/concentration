@@ -23,10 +23,21 @@ class PlayArea extends React.Component {
       );
     });
 
+    let gameOver;
+    if (this.props.gameOver) {
+      gameOver = (
+        <>
+          <h1 className="gameOver">{this.props.gameOverMessage}</h1>
+          <button className="newGame" onClick={this.props.newGameClick}>New Game</button>
+        </>
+      );
+    }
+
     return (
       <div className="playarea">
         <div className="cards">
           {cards}
+          {gameOver}
         </div>
       </div>
     );

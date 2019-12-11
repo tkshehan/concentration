@@ -10,6 +10,8 @@ class Concentration extends React.Component {
     score: [0, 0],
     activePlayer: 1,
     selected: [],
+    gameOver: false,
+    gameOverMessage: '',
   };
 
   selectCard = (value, suit) => {
@@ -60,7 +62,7 @@ class Concentration extends React.Component {
   }
 
   checkFinish = () => {
-    if (this.state.score[0] + this.state.score[1] >= this.state.cards.length / 2) {
+    if (!this.state.gameOver && this.state.score[0] + this.state.score[1] >= this.state.cards.length / 2) {
       let message;
       if (this.state.score[0] > this.state.score[1]) {
         message = 'Player 1 Wins';
@@ -70,13 +72,10 @@ class Concentration extends React.Component {
         message = 'Tie Game';
       }
 
-      alert(message);
-
-      setTimeout(() => {
-        if (alert('Play again?')) {
-          this.setupGame();
-        }
-      }, 5000);
+      this.setState({
+        gameOverMessage: message,
+        gameOver: true,
+      })
     }
   }
 
@@ -86,6 +85,8 @@ class Concentration extends React.Component {
       score: [0, 0],
       activePlayer: 1,
       selected: [],
+      gameOver: false,
+      gameOverMessage: '',
     });
   }
 
@@ -102,8 +103,10 @@ class Concentration extends React.Component {
           cards={this.state.cards}
           onClick={this.selectCard}
           selected={this.state.selected}
+          gameOverMessage={this.state.gameOverMessage}
+          gameOver={this.state.gameOver}
+          newGameClick={this.setupGame}
         />
-        <button onClick={this.setupGame}>New Game</button>
       </>
     );
   }

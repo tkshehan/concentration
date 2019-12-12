@@ -19,7 +19,7 @@ button.newGame {
 .gameOver {
   position: absolute;
   top: 35%;
-  left: 40%;
+  left: 35%;
   color: #3f51b5;
   background-color: #f3f4fb;
 }

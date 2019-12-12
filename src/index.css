@@ -16,4 +16,38 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
+  background-color: #f3f4fb;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  margin: 0
+}
+
+button, input {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+   border-radius:4px
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }

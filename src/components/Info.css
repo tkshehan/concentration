@@ -5,10 +5,13 @@
 
   width: 300px;
   padding-right: 25px;
+
+  color: #3f51b5;
+  background-color: #f3f4fb;
 }
 
 @media (min-width: 600) {
-  .info{
+  .info {
     width: 600px;
     padding-right: 50px;
   }

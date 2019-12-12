@@ -1,7 +1,6 @@
 import React from 'react';
 import Concentration from './components/Concentration';
 
-
 function App() {
   return (
     <div className="App">

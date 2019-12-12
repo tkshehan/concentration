@@ -1,5 +1,5 @@
 .playarea {
-  width: 450px;
+  width: 340px;
 }
 
 .cards {
@@ -22,6 +22,12 @@ button.newGame {
   left: 40%;
   color: #3f51b5;
   background-color: #f3f4fb;
+}
+
+@media (min-width: 426px) {
+  .playarea {
+    width: 426px;
+  }
 }
 
 @media (min-width: 600px) {

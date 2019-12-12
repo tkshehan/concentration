@@ -12,3 +12,6 @@ Once I had my final product styled and tested, I built it for deployment at gith
 I avoided any css frameworks, only referencing w3 frameworks for some color selections,
 and chose to use individual css files for each component.
 
+If I chose to rebuild this, I might choose a css grid framework for more dynamic reisizing of the playarea and cards.
+At around 450px wide the cards start to cut off, but given there was no minimum supported size in the specs,
+I didn't see this as a problem.
